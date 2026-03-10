@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Platform Starter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Quiz Platform</h1>
+    <section id="setup" class="card">
+      <h2>Create Quiz</h2>
+      <input id="quizTitle" placeholder="Quiz title" />
+      <button id="addSample">Add Sample Questions</button>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <h2 id="title"></h2>
+      <p id="progress"></p>
+      <h3 id="question"></h3>
+      <div id="options"></div>
+      <button id="nextBtn" class="hidden">Next</button>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Result</h2>
+      <p id="score"></p>
+      <button id="restartBtn">Restart</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
